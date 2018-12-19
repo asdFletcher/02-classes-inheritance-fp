@@ -1,5 +1,6 @@
 'use strict';
 
+// Vehicle Constructor
 const Vehicle = function(name, wheels) {
   this.name = name;
   this.wheels = wheels;
@@ -13,6 +14,7 @@ Vehicle.prototype.stop = () => {
   return 'Stopping';
 };
 
+
 // Car Constructor
 const Car = function(name) {
   Vehicle.call(this, name, 4);
@@ -20,6 +22,8 @@ const Car = function(name) {
 
 Car.prototype = new Vehicle();
 
+
+// Motorcycle Constructor
 const Motorcycle = function(name) {
   Vehicle.call(this,name,2);
 };
