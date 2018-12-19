@@ -57,8 +57,9 @@ describe('Vehicles', () => {
 });
 
 
-
-let FlyingVehicle = require('../flying-vehicle-class');
+let FlyingVehicle = require('../flying-vehicle-class.js');
+// let FlyingVehicle = require('../flying-vehicle-factory.js');
+// let FlyingVehicle = require('../flying-vehicle-constructor.js');
 
 describe('flying vehicle', ()=>{
 
