@@ -15,13 +15,13 @@ const FlyingVehicle = function(wings, tailNumber, color, topSpeed, maxAltitude, 
 
 };
 
-FlyingVehicle.prototype.land = () => {
+FlyingVehicle.prototype.land = function() {
   console.log('landed');
   this.altitude = 0;
   this.speed = 0;
 };
 
-FlyingVehicle.prototype.takeOff = () => {
+FlyingVehicle.prototype.takeOff = function() {
   console.log('taking off');
   this.speed = this.topSpeed;
   this.altitude = this.maxAltitude;
@@ -34,12 +34,12 @@ const Airplane = function(tailNumber, color) {
 
 Airplane.prototype = new FlyingVehicle();
 
-Airplane.prototype.taxi = () => {
+Airplane.prototype.taxi = function() {
   this.speed = 25;
   console.log(`taxi-ing, current speed is ${this.speed}`);
 };
 
-Airplane.prototype.autoPilot = (duration) => {
+Airplane.prototype.autoPilot = function(duration) {
   this.sleepFor = duration;
   console.log(`Autopilot engaged for ${duration} minutes. Enjoy the flight.`);
 };
@@ -52,7 +52,7 @@ const Helicopter = function(tailNumber, color) {
 
 Helicopter.prototype = new FlyingVehicle();
 
-Helicopter.prototype.taxi = () => {
+Helicopter.prototype.taxi = function() {
   this.speed = 15;
   console.log(`taxi-ing, current speed is ${this.speed}`);
 };

@@ -79,7 +79,10 @@ describe('flying vehicle', ()=>{
         speed: 0,
       };
 
-      expect(expected).toEqual(dumbo);
+      expect(dumbo).toEqual(
+        expect.objectContaining(expected)
+      );
+
     }); 
 
     it('can takeoff', () => {
@@ -134,7 +137,9 @@ describe('flying vehicle', ()=>{
         speed: 0,
       };
 
-      expect(expected).toEqual(myHeli);
+      expect(myHeli).toEqual(
+        expect.objectContaining(expected)
+      );
     }); 
 
     it('can takeoff', () => {
