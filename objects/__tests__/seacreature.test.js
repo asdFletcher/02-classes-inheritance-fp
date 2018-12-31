@@ -1,7 +1,7 @@
 'use strict';
 
 // let SeaCreature = require('./../seacreature-factory.js');
-let SeaCreature = require('./../seacreature-class.js');
+let SeaCreature = require('./../seacreature-constructor.js');
 // let SeaCreature = require('./../seacreature-factory.js');
 
 

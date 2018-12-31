@@ -9,17 +9,18 @@ const util = require('util');
 // const FlyingVehicle = require('./flying-vehicle-factory');
 // const FlyingVehicle = require('./flying-vehicle-constructor');
 
-const SeaCreature = require('./seacreature-factory.js');
+// const SeaCreature = require('./seacreature-factory.js');
+const SeaCreature = require('./seacreature-constructor.js');
 
 const reddie = new SeaCreature.Lobster('reddie', 'blue', 40);
 
-// console.log({SeaCreature});
-// console.log({reddie});
+console.log({SeaCreature});
+console.log({reddie});
 
-reddie.swim();
-reddie.crawl();
-reddie.breatheWater();
-reddie.sing();
+// reddie.swim();
+// reddie.crawl();
+// reddie.breatheWater();
+// reddie.sing();
 
 // console.log(reddie.antennae);
 // console.log(reddie.name);
@@ -28,11 +29,11 @@ reddie.sing();
 // console.log(reddie.legs);
 // console.log(reddie.fins);
 
-const fishie = new SeaCreature.Fish('fishie','shiny', 1);
-fishie.swim();
-// fishie.crawl();
-fishie.breatheWater();
-fishie.sing();
+// const fishie = new SeaCreature.Fish('fishie','shiny', 1);
+// fishie.swim();
+// // fishie.crawl();
+// fishie.breatheWater();
+// fishie.sing();
 
 // console.log(fishie.antennae);
 // console.log(fishie.name);

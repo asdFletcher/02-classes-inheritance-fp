@@ -2,7 +2,8 @@
 
 // These 2 should be interchangeable!
 // const List = require('../list.js');
-const List = require('../list-constructor.js');
+// const List = require('../list-constructor.js');
+const List = require('../list-class.js');
 
 describe('List Data Structure', () => {
 

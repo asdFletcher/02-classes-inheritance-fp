@@ -1,6 +1,6 @@
 'use strict';
 
-let util = require('util');
+// let util = require('util');
 
 function List() {
   this.length = 0;
