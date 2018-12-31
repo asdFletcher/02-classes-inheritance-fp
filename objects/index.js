@@ -1,41 +1,42 @@
 'use strict';
-
 const util = require('util');
 
 // const Vehicle = require('./vehicle-class.js');
 // const Vehicle = require('./vehicle-factory.js');
-const Vehicle = require('./vehicle-constructor.js');
-
-// const testmoto = new Vehicle.Motorcycle('motoo');
-// console.log(testmoto);
-// console.log(testmoto.drive());
-// console.log(testmoto.stop());
-// console.log(testmoto.wheelie());
-
-
+// const Vehicle = require('./vehicle-constructor.js');
 
 // const FlyingVehicle = require('./flying-vehicle-class');
 // const FlyingVehicle = require('./flying-vehicle-factory');
-const FlyingVehicle = require('./flying-vehicle-constructor');
+// const FlyingVehicle = require('./flying-vehicle-constructor');
 
-const dumbo = new FlyingVehicle.Airplane('NDMB001', 'gray');
-console.log(`dumbo: ${util.inspect(dumbo)}`);
-// console.log(`dumbo: ${dumbo.land}`);
-// console.log(`dumbo: ${dumbo.taxi}`);
-// console.log(`dumbo: ${dumbo.autoPilot}`);
+const SeaCreature = require('./seacreature-factory.js');
 
-// dumbo.taxi();
-dumbo.takeOff();
-// dumbo.autoPilot(60);
-// dumbo.land();
-console.log(`dumbo: ${util.inspect(dumbo)}`);
+const reddie = new SeaCreature.Lobster('reddie', 'blue', 40);
 
-// const myHeli = new FlyingVehicle.Helicopter('NDMB001', 'gray');
-// console.log(`myHeli: ${util.inspect(myHeli)}`);
-// console.log(`myHeli: ${myHeli.land}`);
-// console.log(`myHeli: ${myHeli.taxi}`);
-// console.log(`myHeli: ${myHeli.autoPilot}`);
+// console.log({SeaCreature});
+// console.log({reddie});
 
-// myHeli.taxi();
-// myHeli.takeOff();
-// myHeli.land();
+reddie.swim();
+reddie.crawl();
+reddie.breatheWater();
+reddie.sing();
+
+// console.log(reddie.antennae);
+// console.log(reddie.name);
+// console.log(reddie.age);
+// console.log(reddie.color);
+// console.log(reddie.legs);
+// console.log(reddie.fins);
+
+const fishie = new SeaCreature.Fish('fishie','shiny', 1);
+fishie.swim();
+// fishie.crawl();
+fishie.breatheWater();
+fishie.sing();
+
+// console.log(fishie.antennae);
+// console.log(fishie.name);
+// console.log(fishie.age);
+// console.log(fishie.color);
+// console.log(fishie.legs);
+// console.log(fishie.fins);

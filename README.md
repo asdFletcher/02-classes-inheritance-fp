@@ -1,7 +1,7 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB: Classes & Inheritance
+![CF](http://i.imgur.com/7v5ASc8.png) LAB: Async
 =================================================
 
-## Lab 02
+## Lab 03
 
 ### Author: Fletcher LaRue
 
@@ -9,7 +9,7 @@
 
 [![Build Status](https://www.travis-ci.com/asdFletcher/02-classes-inheritance-fp.svg?branch=master)](https://www.travis-ci.com/asdFletcher/02-classes-inheritance-fp)
 
-* [repo](https://github.com/asdFletcher/02-classes-inheritance-fp)
+* [repo](https://github.com/asdFletcher/03-async)
 * [travis](https://www.travis-ci.com/asdFletcher/02-classes-inheritance-fp)
 
 
@@ -108,3 +108,5 @@ TODO: fill out testing methodology
 ---
 
 ### 
+
+
